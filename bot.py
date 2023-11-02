@@ -13,7 +13,7 @@ from telepot.namedtuple import ReplyKeyboardMarkup, KeyboardButton
 
 
 webhook_url = ''  # discord webhook here
-TOKEN = ''  # your bot token here
+TOKEN = '6372783424:AAHmN8RRRtoEQTnwUVUnOh4tB5jTYEsgilU'  # your bot token here
 
 attack_slots = 2
 attack_slots_lock = threading.Lock()
@@ -56,7 +56,7 @@ def is_user_authorized(user_id):
     if info['expiry_date'] < datetime.datetime.now():
         del authorized_users[user_id]
         write_authorized_users(authorized_users)
-        bot.sendMessage(user_id, 'Your plan has expired. Contact @atusssssssss to renew.')
+        bot.sendMessage(user_id, 'by PutXd')
         return False
     return True
 
